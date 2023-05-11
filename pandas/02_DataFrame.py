@@ -69,8 +69,9 @@ df.reset_index()
 df.reset_index(inplace=True)
 
 
-col = "PA BA RJ MT AL".split()
+col = "PA BA RJ MT AL".split() # precia ter o mesma quantidade de item do indice
 
 df["Estados"] = col
 
-print(df.set_index("Estados"))
+# Utizar os estados como Index no df
+df.set_index("Estados")
